@@ -1,13 +1,11 @@
 import { Logo } from "./Logo"
-import { Navbar } from "../Navbar"
-import { Botton } from "./Botton"
+import { Navbar } from "./Navbar"
 
 export const Top = () => {
     return(
     <>
         <Logo />
         <Navbar />
-        <Botton />
     </>
     )
 }

@@ -1,5 +1,5 @@
-import { Top } from "./header-fragment/Top"
-import  {HeaderStyled} from "./styles/Header.styled"
+import { Top } from "./sidepanel/header-fragment/Top"
+import  {HeaderStyled} from "./sidepanel/styles/Header.styled"
 export const Header = () => {
   return (
       <HeaderStyled>

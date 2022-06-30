@@ -6,6 +6,9 @@
 # node .env
 .env
 
+#images folder 
+public
+
 #Multipass
 cloud-init.yaml
 

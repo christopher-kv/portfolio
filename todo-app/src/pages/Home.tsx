@@ -1,7 +1,12 @@
-import { SidePanel } from "../components/SidePanel"
+import Content from "../components/content-fragment/Content"
+import { SidePanel } from "../components/sidepanel/SidePanel"
 
 export const Home = () => {
     return (
-        <SidePanel />   
+        <>
+            <Content /> 
+            <SidePanel />   
+                
+        </>
     )
 }

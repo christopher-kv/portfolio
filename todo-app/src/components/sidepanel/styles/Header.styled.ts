@@ -9,7 +9,7 @@ export const HeaderStyled = styled.header`
 		width: 375px;
 		height: 100%;
 		color: #fff;
-		background: #222729 url('images/overlay.png');
+		background: #222729 url('./overlay.png');
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0,0,0,0.125);
 		text-align: right;
 	}
@@ -51,4 +51,5 @@ export const HeaderStyled = styled.header`
 				{
 					color: #fff;
 				}
+
 `
