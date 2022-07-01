@@ -15,23 +15,24 @@ RUN apk add git openssh openrc curl\
 
 WORKDIR /App
 
-
-COPY . .
+COPY package*.json .
 
 # ENV CI=true
 
 ENV PORT=3000
 
 EXPOSE ${PORT}
-# 
+
 RUN npm create vite@latest -y todo-app -- --template react-ts \
     && cd todo-app \
     && npm install --save-dev babel-plugin-styled-components \
     && npm install --save styled-components react-router-dom axios \
     && npm install --save typescript @types/node @types/react @types/react-dom @types/jest \
-    && npm install
+    && /App/todo-app/src && rm -rf * && cd ..
 
 WORKDIR /App/todo-app
+
+COPY ./todo-app/src .
 
 # ENTRYPOINT ["sh", "-c", "rc-status; rc-service sshd start"]
 

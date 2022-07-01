@@ -5,10 +5,10 @@ export const SidePanelStyled = styled.section`
     position: fixed;
     top: 0;
     left: 0;
-    width: 375px;
+    width: 240px;
     height: 100%;
     color: #fff;
-    background: #222729 url(images/overlay.png);
+    background: #222729 url(./overlay.png);
     box-shadow: inset -0.25em 0 0.25em 0 rgb(0 0 0 / 13%);
     text-align: right;
     }
@@ -19,11 +19,20 @@ export const SidePanelStyled = styled.section`
         z-index: 10001;
         position: fixed;
         display: block;
-        width: 240px;
+        width: 100px;
         overflow-y: auto;
         top: 0px;
         left: -240px;
         height: 100%;
         transform: translate(240px, 0px);
+        
+        & h1{
+            display: none;
+            z-index: -1;
+        }
+        & span#byline{
+            display: none;
+            z-index: -1;
+        }
     }
 `

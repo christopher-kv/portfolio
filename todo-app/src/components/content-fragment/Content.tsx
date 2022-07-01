@@ -1,9 +1,25 @@
 import { ContainerStyled } from "./styles/Container.styled"
-
+import { Col, Row } from 'react-bootstrap'
 
 const Content = () => {
   return (
     <ContainerStyled>
+        <Row>
+            <Col >
+                <section id="top" className={"one"}>
+                    <div className={"container small"}>
+                        <a href="#" className="image featured"></a>
+                    <header>
+                    <p>Content in Production</p>    
+                    </header>
+                    <p>Content in Production</p>
+                    <iframe src='https://gfycat.com/ifr/GloriousTeemingBluebottle'  scrolling='no' width='640' height='404'></iframe><p> <a href="https://gfycat.com/gloriousteemingbluebottle">via Gfycat</a></p>
+                    </div>
+                </section>
+            </Col>
+        </Row>
+
+
         {/* <div id="main">
         <Section id="top" class="one">
             <div class="container small"> <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" style="left: 0px; margin-left: 0px;"></a>

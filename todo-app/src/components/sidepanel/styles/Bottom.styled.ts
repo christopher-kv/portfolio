@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
 export const Bottom = styled.div`
+   
     &
     {
+    margin-top:0.2rem;
+    border-top:1px;    
+    border-color:white;
     border-style:solid;
     /* border-width:2px;
     border-top:2px; */
@@ -13,12 +17,12 @@ export const Bottom = styled.div`
     bottom: 0;
     width: 100%;
     }
-    & ul svg {
+    & svg {
         width:2em;
         height:38px;
         cursor: default;
         font-size: 0.8em;
-        margin: 0 0 1em 0;
+        margin: 1rem 0 1em 0;
         text-align: center;
     }
     & a
@@ -28,7 +32,7 @@ export const Bottom = styled.div`
         height: 2em;
         line-height: 2em;
         text-align: center;
-        border: 0;
+        /* border: 0; */
     }
     & a:hover
     {
@@ -41,7 +45,11 @@ export const Bottom = styled.div`
     }
     & li{
         display: inline-block;
-        height:38px;
-        width:38px;
+        height:auto;
+        width:auto;
+        gap:50px;
+    }
+    & ul{
+        
     }
 ` 

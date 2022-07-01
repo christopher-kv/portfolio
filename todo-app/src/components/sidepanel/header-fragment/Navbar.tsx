@@ -5,6 +5,9 @@ import { SiAboutdotme } from "react-icons/si"
 import { MdOutlinePermContactCalendar } from "react-icons/md"
 import styled from "styled-components"
 
+import { RiGithubLine } from "react-icons/ri"
+import { SiGmail } from "react-icons/si"
+import { Bottom } from "../styles/Bottom.styled"
 
 const A = styled.a`
     & 
@@ -21,6 +24,30 @@ const A = styled.a`
     }
 `
 
+import { LogoStyled, ImageLogo } from "../styles/Logo.styled"
+
+const Props = {
+    "name":"Christopher Silva",
+    "desc":"Javascript Enthusiast",
+    logo:{    
+        src:"./Sem título2.png",
+        "color": "#f00"
+    }
+
+}
+
+export const Logo: React.FC = ():JSX.Element => {
+    return (
+        <LogoStyled>
+            <span id={"img48"}>
+                <ImageLogo src={Props.logo["src"]} alt={''} />
+            </span>
+            <h1>{Props["name"]}</h1>
+            <span id="byline">{Props["desc"]}</span>
+        </LogoStyled>
+    )
+}
+
 export const Navbar = ():JSX.Element => {
     return (
         <NavbarStyled>
@@ -32,4 +59,16 @@ export const Navbar = ():JSX.Element => {
                 </ul>
         </NavbarStyled>
     )
+}
+
+export const Botton = ():JSX.Element => {
+    return(
+        <Bottom>
+            <ul className="icons">
+            <li><a href="#" className="icon icon-github" ><RiGithubLine /><span>Github</span></a></li>
+            <li><a href="#" className="icon icon-envelope"><SiGmail /><span>Email</span></a></li>
+            </ul>
+        </Bottom>
+    )
+
 }

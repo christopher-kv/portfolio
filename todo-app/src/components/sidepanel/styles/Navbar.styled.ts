@@ -37,7 +37,7 @@ export const NavbarStyled = styled.nav`
 					transition: none;
 				}
 				
-					& ul li a span
+					/* & ul li a span
 					{
 						padding-top:0.25rem;
 						cursor:default;
@@ -45,6 +45,20 @@ export const NavbarStyled = styled.nav`
 						position: relative;
 						display: block;
 						font-size: 1.4rem;
+					} */
+					&  ul li a span{
+						display:block;
+						position: relative;
+						text-align:right;
+						left: 0;
+						color: #41484c;
+						text-align: right;
+						/* width: 1.25em; */
+						font-family: FontAwesome;
+						font-size: 0.8em;
+						text-decoration: none;
+						font-weight: normal;
+						font-style: normal;
 					}
 					
 						& ul li a span:before
@@ -60,29 +74,34 @@ export const NavbarStyled = styled.nav`
 					{
 						background: rgba(0,0,0,0.15);
 						box-shadow: inset 0 0 0.25em 0 rgba(0,0,0,0.125);
-						color: #fff;
+						color: white;
 					}
 
 						& ul li a.active span
 						{
 						}
 
-							& ul li a:active span:before
-							{
-								color: #E27689;
-							}
-								& a:hover {
+
+								& a:checked {
+									/* color: #E27689; */
 									color: #E27689;
 									border-bottom-color: rgba(255,255,255,0);
 								}
-								& ul li:hover {
-									color: #E27689;
-									border-bottom-color: rgba(255,255,255,0);
+									& a:active
+									{
+										color: white;
+									}
+								& a:hover, :focus {
+									background-color: #1C2022;
+									opacity:0.7;
 								}
 									& ul li:active{
-									color: #E27689;
+									color: white;
 									border-bottom-color: rgba(255,255,255,0);
 								}
+		@media screen and (max-width: 600px) {
+			display:none;
+    }
 
 `
 export const Icon = styled.span`

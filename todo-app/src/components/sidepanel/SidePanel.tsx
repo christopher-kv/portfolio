@@ -1,4 +1,4 @@
-import { Botton } from "./header-fragment/Botton"
+import { Botton } from "./header-fragment/Navbar"
 import { Top } from "./header-fragment/Top"
 import { SidePanelStyled } from "./styles/SidePanel.styled"
 
